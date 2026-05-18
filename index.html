@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PhD NLP Roadmap · 7-Week Intensive</title>
+<title>NLP to LLM Roadmap</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="llm.png" rel="icon">
+  <link href="llm.png" rel="apple-touch-icon">
 <style>
 :root {
   --bg: #f5f2ec; --surface: #ffffff; --surface2: #ede9e0;
@@ -368,7 +370,7 @@ a:hover{color:var(--teal);text-decoration:underline}
 
 /* ═══ SCHEDULE ═══ */
 .schedule-grid{display:grid;grid-template-columns:90px 1fr;margin:20px 0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
-.schedule-time{font-family:var(--font-mono);font-size:.72rem;padding:12px 14px;background:var(--ink);color:var(--bg);display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.08)}
+.schedule-time{font-family:var(--font-mono);font-size:.68rem;padding:12px 14px;background:var(--ink);color:var(--bg);display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.08)}
 .schedule-activity{padding:12px 16px;font-size:.8rem;border-bottom:1px solid var(--border);display:flex;align-items:center}
 .schedule-grid > :nth-last-child(-n+2){border-bottom:none}
 
@@ -459,9 +461,9 @@ a:hover{color:var(--teal);text-decoration:underline}
 <!-- ═══════════ SIDEBAR ═══════════ -->
 <aside class="sidebar" id="sidebar">
   <div class="sb-brand">
-    <span class="sb-tag">PhD Prep · 7 Weeks</span>
+    <span class="sb-tag">Roadmap · 7 Weeks</span>
     <div class="sb-name">NLP → LLM → VLM</div>
-    <div class="sb-sub">NLP · LLMs · VLMs · Fall 2026</div>
+    <div class="sb-sub">NLP · LLM · VLM · MLLM</div>
   </div>
   <div class="sb-progress">
     <div class="progress-ring">
@@ -476,8 +478,8 @@ a:hover{color:var(--teal);text-decoration:underline}
   </div>
   <nav class="sb-nav">
     <div class="sb-section-lbl">Dashboard</div>
-    <a class="sb-link" href="#overview"><span class="sb-dot" style="background:var(--muted)"></span>Overview<span class="sb-wk">7W</span></a>
-    <a class="sb-link" href="#assessment"><span class="sb-dot" style="background:var(--muted)"></span>Skills Assessment</a>
+    <a class="sb-link" href="#overview"><span class="sb-dot" style="background:var(--muted)"></span>Overview</a>
+    <a class="sb-link" href="#assessment"><span class="sb-dot" style="background:var(--muted)"></span>Table of Contents</a>
     <div class="sb-section-lbl">Weekly Plan</div>
     <a class="sb-link" href="#w1" data-nav="w1"><span class="sb-dot" style="background:var(--accent)"></span>W1 · DL & PyTorch<span class="sb-check">✓</span></a>
     <a class="sb-link" href="#w2" data-nav="w2"><span class="sb-dot" style="background:var(--gold)"></span>W2 · NLP Fundamentals<span class="sb-check">✓</span></a>
@@ -487,12 +489,11 @@ a:hover{color:var(--teal);text-decoration:underline}
     <a class="sb-link" href="#w6" data-nav="w6"><span class="sb-dot" style="background:var(--brown)"></span>W6 · VLMs<span class="sb-check">✓</span></a>
     <a class="sb-link" href="#w7" data-nav="w7"><span class="sb-dot" style="background:var(--navy)"></span>W7 · Consolidation<span class="sb-check">✓</span></a>
     <div class="sb-section-lbl">Reference</div>
-    <a class="sb-link" href="#reading"><span class="sb-dot" style="background:var(--muted)"></span>📚 Theory & Reading</a>
+    <a class="sb-link" href="#projects"><span class="sb-dot" style="background:var(--muted)"></span>Projects</a>
+    <a class="sb-link" href="#reading"><span class="sb-dot" style="background:var(--muted)"></span>Reading Resources</a>
     <a class="sb-link" href="#papers"><span class="sb-dot" style="background:var(--muted)"></span>Must-Read Papers</a>
-    <a class="sb-link" href="#projects"><span class="sb-dot" style="background:var(--muted)"></span>Mini-Projects</a>
     <a class="sb-link" href="#compute"><span class="sb-dot" style="background:var(--muted)"></span>Compute Resources</a>
     <a class="sb-link" href="#schedule"><span class="sb-dot" style="background:var(--muted)"></span>Daily Schedule</a>
-    <a class="sb-link" href="#postpone"><span class="sb-dot" style="background:var(--muted)"></span>Postpone List</a>
     <a class="sb-link" href="#advice"><span class="sb-dot" style="background:var(--muted)"></span>Final Advice</a>
   </nav>
   <div class="sb-footer">
@@ -517,14 +518,67 @@ a:hover{color:var(--teal);text-decoration:underline}
 
 <!-- HERO -->
 <header class="hero" id="overview">
-  <div class="hero-eyebrow">PhD Preparation Roadmap · 7 Weeks</div>
-  <h1>From Classical ML to <em>LLMs, MLLMs & VLMs</em></h1>
-  <p class="hero-desc">A focused, no-fluff learning plan for transitioning into NLP and multimodal research before starting a PhD, Fall 2026. Designed for someone with a solid ML foundation — not a beginner, not a tourist.</p>
+  <div class="hero-eyebrow">Learning Roadmap</div>
+
+  <h1>From Classical ML to <em>LLM, MLLM & VLM</em></h1>
+
+  <p style="
+    max-width: 720px;
+    margin: 0 0 22px 0;
+    padding: 18px 22px;
+    background: linear-gradient(135deg, rgba(194,75,43,0.08), rgba(26,122,109,0.07));
+    border: 1px solid rgba(194,75,43,0.20);
+    border-left: 5px solid #c24b2b;
+    border-radius: 14px;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.05);
+    color: var(--ink2);
+    font-size: 0.92rem;
+    line-height: 1.75;
+    position: relative;
+    z-index: 1;
+  ">
+    This website presents a structured
+    <strong style="color: var(--accent); font-weight: 700;">7-week learning roadmap</strong>
+    for moving from classical Machine Learning toward modern
+    <strong style="color: var(--ink); font-weight: 700;">NLP, Large Language Models, Multimodal LLMs, and Vision-Language Models</strong>.
+    It is designed for learners who already know basic ML and want to prepare for
+    PhD-level research in NLP and LLM-related areas.
+  </p>
+
+  <ul style="
+    max-width: 720px;
+    margin: 0 0 26px 0;
+    padding: 18px 24px 18px 42px;
+    background: rgba(255,255,255,0.55);
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+    color: var(--ink2);
+    font-size: 0.86rem;
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+  ">
+    <li style="margin-bottom: 8px;">
+      Step-by-step weekly learning plan from
+      <strong style="color: var(--ink);">PyTorch basics</strong>
+      to advanced LLM and VLM research topics.
+    </li>
+    <li style="margin-bottom: 8px;">
+      Includes theory, coding practice, research papers, mini-projects, and weekly milestones.
+    </li>
+    <li style="margin-bottom: 8px;">
+      Covers Transformers, Hugging Face, BERT, GPT, LoRA, QLoRA, RAG, CLIP, LLaVA, and multimodal models.
+    </li>
+    <li style="margin-bottom: 0;">
+      Provides <strong style="color: var(--ink);">progress tracking</strong>, must-read papers, reading resources, project ideas, compute guidance, and a daily study schedule.
+    </li>
+  </ul>
+
   <div class="hero-stats">
-    <span class="stat-pill accent">🔥 7 Weeks · ~300 hrs</span>
+    <span class="stat-pill accent">7 Weeks</span>
     <span class="stat-pill teal">📄 11 Must-Read Papers</span>
-    <span class="stat-pill">📺 Karpathy · CS224N · HF</span>
-    <span class="stat-pill">🎯 5 Mini-Projects</span>
+    <span class="stat-pill">5 Projects</span>
   </div>
 </header>
 
@@ -542,7 +596,7 @@ a:hover{color:var(--teal);text-decoration:underline}
 <section class="section" style="padding-top:0">
   <span class="section-eye">Roadmap Overview</span>
   <h2 class="section-title">Two-Month Progressive Plan</h2>
-  <p class="section-desc">Each week builds directly on the previous one. You move from DL basics through NLP, into transformers, then LLMs, and finally multimodal. Week 7 is consolidation.</p>
+  
   <table class="overview-table">
     <thead><tr><th>Week</th><th>Focus Area</th><th>Key Outcome</th></tr></thead>
     <tbody>
@@ -552,35 +606,21 @@ a:hover{color:var(--teal);text-decoration:underline}
       <tr><td><span class="week-dot" style="background:var(--violet)"></span>Week 4</td><td>Pretrained Models & Hugging Face Ecosystem</td><td>Fine-tune BERT for a downstream NLP task</td></tr>
       <tr><td><span class="week-dot" style="background:var(--green)"></span>Week 5</td><td>Large Language Models (LLMs)</td><td>Understand GPT, prompting, RLHF, and LoRA fine-tuning</td></tr>
       <tr><td><span class="week-dot" style="background:var(--brown)"></span>Week 6</td><td>Multimodal LLMs & Vision-Language Models</td><td>Understand CLIP, LLaVA, and run a VLM pipeline</td></tr>
-      <tr><td><span class="week-dot" style="background:var(--navy)"></span>Week 7</td><td>Consolidation, Mini-Project & Research Orientation</td><td>Complete a research-style mini-project and identify PhD topics</td></tr>
+      <tr><td><span class="week-dot" style="background:var(--navy)"></span>Week 7</td><td>Mini-Project & Research Orientation</td><td>Complete a research-style mini-project and identify PhD topics</td></tr>
     </tbody>
   </table>
-  <div class="callout warn">
-    <div class="callout-label">Time Commitment</div>
-    Plan for <strong>5–6 hours per day</strong>, broken into three focused sessions. Weekends 7–8 hours. Totals ~250–300 hours — enough for deep understanding if you stay focused and avoid rabbit holes.
-  </div>
+  
 </section>
 
 <!-- ASSESSMENT -->
 <section class="section" id="assessment">
-  <span class="section-eye">01 · Assessment</span>
-  <h2 class="section-title">Honest Assessment of Your Background & Gaps</h2>
-  <p class="section-desc">Your ML foundation — evaluation metrics, feature engineering, explainability — is exactly what many NLP researchers lack. The challenge: the paradigm shifts from handcrafted features → learned representations and shallow models → deep sequence models.</p>
+  
+  <h2 class="section-title">Table of Contents</h2>
+  
   <div class="gap-grid">
-    <div class="gap-card have">
-      <h4>✓ What You Already Have</h4>
-      <ul>
-        <li>Solid supervised learning pipeline</li>
-        <li>Evaluation metrics (F1, ROC-AUC, confusion matrices)</li>
-        <li>Data preprocessing and feature engineering</li>
-        <li>SHAP/LIME for model interpretability</li>
-        <li>Research paper writing experience</li>
-        <li>Python and scikit-learn proficiency</li>
-        <li>Overfitting, cross-validation, class imbalance (SMOTE)</li>
-      </ul>
-    </div>
+    
     <div class="gap-card need">
-      <h4>✗ Critical Gaps to Fill</h4>
+      
       <ul>
         <li>Deep learning fundamentals (backprop, GPUs, batching)</li>
         <li>PyTorch — the standard NLP research framework</li>
@@ -595,10 +635,7 @@ a:hover{color:var(--teal);text-decoration:underline}
       </ul>
     </div>
   </div>
-  <div class="callout tip">
-    <div class="callout-label">Reality Check</div>
-    Two months won't make you an expert. The goal: arrive at your PhD lab able to <strong>read papers without getting lost</strong>, <strong>run and modify code</strong>, <strong>converse with your supervisor</strong>, and <strong>identify research directions</strong>.
-  </div>
+  
 </section>
 
 <!-- ═══════════ WEEK PLAN ═══════════ -->
@@ -866,8 +903,8 @@ a:hover{color:var(--teal);text-decoration:underline}
         <div class="chk" data-week="7" onclick="doCheck(event)"></div>
         <span class="wk-badge w7">Week 07</span>
         <div class="wk-info">
-          <div class="wk-title">🎯 Consolidation, Mini-Project & Research Orientation</div>
-          <div class="wk-sub">Choose 1 mini-project · Read 4–5 recent papers · Research writing · PhD preparation</div>
+          <div class="wk-title">🎯 Mini-Project & Research Orientation</div>
+          <div class="wk-sub">Choose 1 mini-project · Read 4–5 recent papers · Research writing </div>
         </div>
         <span class="wk-hrs">~40 hrs+</span>
         <span class="chevron">▼</span>
@@ -897,9 +934,9 @@ a:hover{color:var(--teal);text-decoration:underline}
 
 <!-- ═══════════ PROJECTS ═══════════ -->
 <section class="section" id="projects">
-  <span class="section-eye">Mini-Projects</span>
-  <h2 class="section-title">Research-Style Mini-Projects for Week 7</h2>
-  <p class="section-desc">Choose <strong>one</strong>. These require combining multiple skills and making research-style decisions about data, methods, and evaluation.</p>
+  <span class="section-eye">Projects</span>
+  <h2 class="section-title">Research-Style Mini-Projects</h2>
+  
 
   <div class="project-card"><span class="project-diff diff-int">Intermediate</span><h4>Project 1: Domain-Adaptive Fine-tuning Comparison</h4><p>Take domain-specific data (medical, legal, scientific). Compare: (a) BERT fine-tuned on in-domain data, (b) LLM with few-shot prompting, (c) LoRA-adapted LLM. Evaluate all three. Write a 2-page report with error analysis.</p><p><strong>Skills:</strong> Experimental comparison, ablation analysis, scientific writing.</p></div>
 
@@ -914,16 +951,14 @@ a:hover{color:var(--teal);text-decoration:underline}
 
 <!-- ═══════════ THEORY & READING RESOURCES ═══════════ -->
 <section class="section" id="reading">
-  <span class="section-eye">Theory & Reading Resources</span>
-  <h2 class="section-title">📚 Where to Read Theory — Free Textbooks, Blogs & Course Notes</h2>
-  <p class="section-desc">Every resource below is free and verified. Use these alongside the video lectures — reading solidifies what lectures introduce. Mapped to the weekly plan so you know exactly what to read when.</p>
+  <span class="section-eye">Reading Resources</span>
+  <h2 class="section-title"> Free Textbooks &  Papers</h2>
+  
 
   <div class="callout tip">
-    <div class="callout-label">How to Use This</div>
-    Each entry shows which weeks it maps to. Theory reading is for your morning Session 1 (9–11 AM) and afternoon Session 3 (3–5 PM). Read before or after the corresponding video lecture for maximum retention.
-  </div>
+    
 
-  <h3 style="font-family:var(--font-display);font-size:1.1rem;margin:28px 0 16px;color:var(--accent)">📖 Core Textbooks (Free Online)</h3>
+  <h3 style="font-family:var(--font-display);font-size:1.1rem;margin:28px 0 16px;color:var(--accent)">📚 Core Textbooks</h3>
 
   <div class="reading-card">
     <div class="reading-meta"><span class="task-tag tag-read">Textbook</span><span class="task-tag" style="background:var(--accent-soft);color:var(--accent)">W1–W7</span></div>
@@ -936,7 +971,7 @@ a:hover{color:var(--teal);text-decoration:underline}
     <div class="reading-meta"><span class="task-tag tag-read">Textbook</span><span class="task-tag" style="background:var(--gold-soft);color:var(--gold)">W2–W7</span></div>
     <h4><a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank" class="res-link-title">Speech and Language Processing, 3rd Ed. Draft — Jurafsky & Martin (Stanford)</a></h4>
     <p>The NLP bible. Free PDF chapters updated Jan 2026. <strong>This is your primary NLP theory textbook.</strong> Read: Ch 3 (N-grams → W2), Ch 6 (Vector Semantics → W2), Ch 7 (Neural Nets & LMs → W1–W2), Ch 8 (Transformers → W3), Ch 9 (Pretraining: BERT, GPT → W3–W4), Ch 11 (Fine-Tuning → W4–W5), Ch 12 (LLMs → W5).</p>
-    <div class="reading-chapters">Key chapters: 3 · 6 · 7 · 8 · 9 · 11 · 12 — also available as <a href="https://web.stanford.edu/~jurafsky/slp3/ed3book.pdf" target="_blank" class="res-link">single PDF</a></div>
+    <div class="reading-chapters">Key chapters: 3 · 6 · 7 · 8 · 9 · 11 · 12 — also available as <a href="https://github.com/yanshengjia/ml-road/blob/master/resources/Speech%20and%20Language%20Processing%20(3rd%20Edition).pdf" target="_blank" class="res-link">single PDF</a></div>
   </div>
 
   <div class="reading-card">
@@ -946,75 +981,21 @@ a:hover{color:var(--teal);text-decoration:underline}
     <div class="reading-chapters">Key chapters: 1–4 (fundamentals) · 6–7 (sequences) · Free PDF under CC license</div>
   </div>
 
-  <div class="reading-card">
-    <div class="reading-meta"><span class="task-tag tag-read">Primer</span><span class="task-tag" style="background:var(--violet-soft);color:var(--violet)">W1–W2</span></div>
-    <h4><a href="https://arxiv.org/abs/1510.00726" target="_blank" class="res-link-title">A Primer on Neural Network Models for NLP — Yoav Goldberg (2015)</a></h4>
-    <p>Free 76-page tutorial (arXiv). Bridges ML fundamentals and NLP beautifully. Read Sections 1–5 during Week 1 (feedforward, training, features) and Sections 6–9 during Week 2 (CNNs, RNNs for text). Also available as a <a href="https://u.cs.biu.ac.il/~yogo/nnlp.pdf" target="_blank" class="res-link">direct PDF</a>.</p>
-    <div class="reading-chapters">Sections 1–5 (W1) · 6–9 (W2) · Free arXiv PDF</div>
-  </div>
 
-  <h3 style="font-family:var(--font-display);font-size:1.1rem;margin:28px 0 16px;color:var(--teal)">🎨 Visual Guides & Blog Posts (Read Alongside Lectures)</h3>
+
+  
+
+  <h3 style="font-family:var(--font-display);font-size:1.1rem;margin:28px 0 16px;color:var(--green)">📝 Read Papers</h3>
 
   <div class="reading-card">
-    <div class="reading-meta"><span class="task-tag tag-read">Blog</span><span class="task-tag" style="background:var(--teal-soft);color:var(--teal)">W2–W6</span></div>
-    <h4><a href="https://jalammar.github.io/" target="_blank" class="res-link-title">Jay Alammar — Visualizing ML One Concept at a Time</a></h4>
-    <p>The best visual explanations in NLP. Referenced in courses at MIT, Stanford, Cornell. Read these posts in order with your weekly plan:</p>
-    <div style="margin-top:8px;font-size:.82rem;line-height:1.7;color:var(--ink2)">
-      <strong>W3:</strong> <a href="https://jalammar.github.io/illustrated-transformer/" target="_blank" class="res-link">The Illustrated Transformer</a> — read before AND after Karpathy's "build GPT" video<br>
-      <strong>W3:</strong> <a href="https://jalammar.github.io/illustrated-gpt2/" target="_blank" class="res-link">The Illustrated GPT-2</a> — autoregressive generation explained visually<br>
-      <strong>W3–W4:</strong> <a href="https://jalammar.github.io/illustrated-bert/" target="_blank" class="res-link">The Illustrated BERT, ELMo, and co.</a> — encoder models & transfer learning<br>
-      <strong>W6:</strong> <a href="https://jalammar.github.io/illustrated-retrieval-transformer/" target="_blank" class="res-link">The Illustrated Retrieval Transformer</a> — RAG concepts visualized
-    </div>
-  </div>
-
-  <div class="reading-card">
-    <div class="reading-meta"><span class="task-tag tag-read">Notes</span><span class="task-tag" style="background:var(--gold-soft);color:var(--gold)">W2–W5</span></div>
-    <h4><a href="https://aman.ai/cs224n/" target="_blank" class="res-link-title">Aman's AI Journal — CS224N Distilled Notes</a></h4>
-    <p>Beautifully organized visual notes for every CS224N lecture. Use as a revision companion after watching each lecture. Covers word vectors through LLMs with inline diagrams from Jay Alammar's blog.</p>
-    <div class="reading-chapters">Follows CS224N lecture order · Free web format · Great for quick review</div>
-  </div>
-
-  <h3 style="font-family:var(--font-display);font-size:1.1rem;margin:28px 0 16px;color:var(--violet)">🎓 Course Readings & Official Notes</h3>
-
-  <div class="reading-card">
-    <div class="reading-meta"><span class="task-tag tag-video">Course</span><span class="task-tag" style="background:var(--accent-soft);color:var(--accent)">W2–W5</span></div>
-    <h4><a href="https://web.stanford.edu/class/cs224n/" target="_blank" class="res-link-title">Stanford CS224N — Official Course Page (2024–2025)</a></h4>
-    <p>Lecture slides, suggested readings, assignment handouts all free. The "Suggested Readings" for each lecture point to specific textbook chapters and papers. Use this as your weekly reading guide alongside the YouTube playlist.</p>
-    <div class="reading-chapters">Slides + suggested readings per lecture · Assignments with starter code</div>
-  </div>
-
-  <div class="reading-card">
-    <div class="reading-meta"><span class="task-tag tag-video">Course</span><span class="task-tag" style="background:var(--green-soft);color:var(--green)">W5</span></div>
-    <h4><a href="https://stanford-cs324.github.io/winter2022/" target="_blank" class="res-link-title">Stanford CS324 — Large Language Models (2022)</a></h4>
-    <p>The only university course dedicated to LLMs. Comprehensive lecture notes covering training, adaptation, evaluation, societal impact. Free web-based notes — read the "Training" and "Adaptation" modules during Week 5.</p>
-    <div class="reading-chapters">Free lecture notes · Training · Adaptation · Evaluation · Society</div>
-  </div>
-
-  <div class="reading-card">
-    <div class="reading-meta"><span class="task-tag tag-video">Course</span><span class="task-tag" style="background:var(--violet-soft);color:var(--violet)">W4–W6</span></div>
-    <h4><a href="https://huggingface.co/learn/nlp-course" target="_blank" class="res-link-title">Hugging Face NLP Course — Official</a></h4>
-    <p>Free interactive course with runnable code in every chapter. Chapters 1–4 for Week 4, Chapters 5–8 for Weeks 5–6. Not just an API guide — includes solid theory on tokenization, model architectures, and training procedures.</p>
-    <div class="reading-chapters">Ch 1–4 (W4) · Ch 5–8 (W5–W6) · Free · Runnable code · Quizzes</div>
-  </div>
-
-  <div class="reading-card">
-    <div class="reading-meta"><span class="task-tag tag-video">Course</span><span class="task-tag" style="background:var(--brown-soft);color:var(--brown)">W6</span></div>
-    <h4><a href="https://huggingface.co/learn/computer-vision-course" target="_blank" class="res-link-title">Hugging Face Computer Vision Course — Multimodal Sections</a></h4>
-    <p>Free course covering CLIP, ViT, and vision-language models. Read the multimodal chapters during Week 6 alongside Yannic Kilcher's paper reviews.</p>
-    <div class="reading-chapters">Multimodal sections · CLIP · ViT · Free · Runnable code</div>
-  </div>
-
-  <h3 style="font-family:var(--font-display);font-size:1.1rem;margin:28px 0 16px;color:var(--green)">🔬 Where to Find & Read Papers</h3>
-
-  <div class="reading-card">
-    <div class="reading-meta"><span class="task-tag tag-paper">Papers</span><span class="task-tag" style="background:var(--green-soft);color:var(--green)">W3–W7</span></div>
+    
     <h4>Paper Reading Resources</h4>
-    <p>Use these to find, read, and stay current with NLP research:</p>
+    
     <div style="margin-top:8px;font-size:.82rem;line-height:1.9;color:var(--ink2)">
-      <a href="https://arxiv.org/list/cs.CL/recent" target="_blank" class="res-link">arXiv cs.CL</a> — Daily NLP paper feed. Skim titles + abstracts during Week 7.<br>
-      <a href="https://aclanthology.org/" target="_blank" class="res-link">ACL Anthology</a> — All published ACL, EMNLP, NAACL, EACL papers. Search by topic.<br>
-      <a href="https://huggingface.co/papers" target="_blank" class="res-link">Hugging Face Daily Papers</a> — Community-curated trending papers. Check daily from Week 5+.<br>
-      <a href="https://www.youtube.com/@YannicKilcher/playlists" target="_blank" class="res-link">Yannic Kilcher (YouTube)</a> — Best paper walkthroughs. Watch for papers you find hard to parse.
+      
+      <a href="https://2025.aclweb.org/program/main_papers/" target="_blank" class="res-link">ACL Anthology</a> — All published ACL, EMNLP, NAACL, EACL papers. Search by topic.<br>
+      <a href="https://2025.emnlp.org/program/main_papers/" target="_blank" class="res-link">EMNLP Papers</a> — Trending papers. Check daily.<br>
+      
     </div>
   </div>
 </section>
@@ -1042,9 +1023,9 @@ a:hover{color:var(--teal);text-decoration:underline}
 
 <!-- ═══════════ COMPUTE ═══════════ -->
 <section class="section" id="compute">
-  <span class="section-eye">Compute Resources</span>
+  
   <h2 class="section-title">Compute Resources for Your Setup</h2>
-  <p class="section-desc">With 256GB SSD, 16GB RAM, no GPU — you need cloud GPUs. This is normal; almost all NLP researchers use them.</p>
+  
   <table class="compute-table">
     <thead><tr><th>Platform</th><th>GPU</th><th>Cost</th><th>Best For</th></tr></thead>
     <tbody>
@@ -1064,8 +1045,7 @@ a:hover{color:var(--teal);text-decoration:underline}
 
 <!-- ═══════════ SCHEDULE ═══════════ -->
 <section class="section" id="schedule">
-  <span class="section-eye">Daily Schedule</span>
-  <h2 class="section-title">Recommended Daily Schedule</h2>
+  <h2 class="section-title"> Daily Schedule</h2>
   <p class="section-desc">5–6 hours on weekdays, 6–8 on weekends. Consistency beats intensity — six focused hours every day beats twelve some days and zero others.</p>
   <div class="schedule-grid">
     <div class="schedule-time">Session 1</div><div class="schedule-activity"><strong>9:00–11:00 AM</strong> — Theory & Lectures (2 hrs). Watch lectures, read papers. Pen and paper. Pause and think.</div>
@@ -1077,15 +1057,15 @@ a:hover{color:var(--teal);text-decoration:underline}
   </div>
   <div class="callout important">
     <div class="callout-label">On Pace</div>
-    Don't try to understand everything perfectly before moving on. "Spiral learning" works best: learn at 70% depth, move forward, things click retroactively. If stuck 3 days on one derivation, you're going too deep. Mark it, move on, revisit during Week 7.
+    Don't try to understand everything perfectly before moving on. If stuck 3 days on one derivation, you're going too deep. Mark it, move on, revisit during Week 7.
   </div>
 </section>
 
 <!-- ═══════════ POSTPONE ═══════════ -->
 <section class="section" id="postpone">
-  <span class="section-eye">Topics to Postpone</span>
+  
   <h2 class="section-title">Learn These During Your PhD, Not Before</h2>
-  <p class="section-desc">Important but too specialized or time-consuming for now. You'll learn them naturally during your first year.</p>
+  <p class="section-desc">Important but too specialized or time-consuming for now. </p>
   <div style="columns:2;column-gap:24px">
     <div class="postpone-item"><strong>RLHF implementation</strong> — understand concept now, implement later</div>
     <div class="postpone-item"><strong>Distributed training</strong> (DeepSpeed, FSDP, Megatron)</div>
@@ -1104,26 +1084,22 @@ a:hover{color:var(--teal);text-decoration:underline}
 
 <!-- ═══════════ ADVICE ═══════════ -->
 <section class="section" id="advice">
-  <span class="section-eye">Final Advice</span>
-  <h2 class="section-title">Entering an NLP/LLM/VLM PhD Lab</h2>
+  
+  <h2 class="section-title">Final Advice</h2>
 
-  <p style="font-size:.85rem;color:var(--ink2);margin-bottom:20px"><strong>What Your Supervisor Expects:</strong> Not that you know everything. That you can read a paper and follow key ideas, write code that runs, have informed opinions, learn quickly when pointed in the right direction, and communicate clearly about what you know and don't.</p>
-
-  <p style="font-size:.85rem;color:var(--ink2);margin-bottom:20px"><strong>What Sets You Apart:</strong> Most incoming students arrive with strong theory/weak coding or the reverse. Your ML evaluation background (metrics, explainability, proper experimental design) is something many NLP students lack. Lean into this. When reading papers: did they evaluate properly? Right baselines? Sound statistics?</p>
-
-  <p style="font-size:.85rem;color:var(--ink2);margin-bottom:20px"><strong>First Week of PhD:</strong> Read supervisor's 5 most recent papers before arriving. Have 2–3 specific questions. Set up dev environment on university cluster immediately. Introduce yourself to senior lab members. Start a research log (markdown file) from Day 1.</p>
-
-  <p style="font-size:.85rem;color:var(--ink2);margin-bottom:20px"><strong>The Mindset Shift:</strong> Previous ML: pick best model, optimize metric, explain results. PhD: identify unsolved problem, propose method advancing understanding, prove it contributes something new. Same tools, different questions. Ask "why does this method work?" instead of "which method works best?"</p>
+  
 
   <div class="callout tip">
-    <div class="callout-label">One Final Thing</div>
+    
     Keep a "questions document" throughout these 7 weeks. Every confusion or curiosity, write it down. By Week 7, it contains seeds of your research interests. The best PhD projects start as "I noticed something weird and wanted to understand why." Your confusion today is your research intuition tomorrow.
   </div>
 </section>
 
 <footer class="footer">
-  <span><strong>PhD NLP Roadmap</strong> · Fall 2026</span>
-  <span>7 Weeks · 11 Papers · 5 Projects · All links verified</span>
+  <span>NLP-LLM Roadmap by <strong><a href="https://www.linkedin.com/in/monirul-islam-mahmud/" target="_blank" rel="noopener noreferrer">
+    <strong>Monirul Islam Mahmud</strong>
+  </a></strong> </span>
+  <span>7 Weeks · 11 Papers · 5 Projects </span>
 </footer>
 
 </div><!-- /main -->
