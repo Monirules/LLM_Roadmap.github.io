@@ -480,21 +480,14 @@ a:hover{color:var(--teal);text-decoration:underline}
     <div class="sb-section-lbl">Dashboard</div>
     <a class="sb-link" href="#overview"><span class="sb-dot" style="background:var(--muted)"></span>Overview</a>
     <a class="sb-link" href="#assessment"><span class="sb-dot" style="background:var(--muted)"></span>Table of Contents</a>
-    <div class="sb-section-lbl">Weekly Plan</div>
-    <a class="sb-link" href="#w1" data-nav="w1"><span class="sb-dot" style="background:var(--accent)"></span>W1 · DL & PyTorch<span class="sb-check">✓</span></a>
-    <a class="sb-link" href="#w2" data-nav="w2"><span class="sb-dot" style="background:var(--gold)"></span>W2 · NLP Fundamentals<span class="sb-check">✓</span></a>
-    <a class="sb-link" href="#w3" data-nav="w3"><span class="sb-dot" style="background:var(--teal)"></span>W3 · Transformers<span class="sb-check">✓</span></a>
-    <a class="sb-link" href="#w4" data-nav="w4"><span class="sb-dot" style="background:var(--violet)"></span>W4 · Hugging Face<span class="sb-check">✓</span></a>
-    <a class="sb-link" href="#w5" data-nav="w5"><span class="sb-dot" style="background:var(--green)"></span>W5 · LLMs<span class="sb-check">✓</span></a>
-    <a class="sb-link" href="#w6" data-nav="w6"><span class="sb-dot" style="background:var(--brown)"></span>W6 · VLMs<span class="sb-check">✓</span></a>
-    <a class="sb-link" href="#w7" data-nav="w7"><span class="sb-dot" style="background:var(--navy)"></span>W7 · Consolidation<span class="sb-check">✓</span></a>
-    <div class="sb-section-lbl">Reference</div>
+    <a class="sb-link" href="#weekplan"><span class="sb-dot" style="background:var(--muted)"></span>Weekly Plan</a>
     <a class="sb-link" href="#projects"><span class="sb-dot" style="background:var(--muted)"></span>Projects</a>
-    <a class="sb-link" href="#reading"><span class="sb-dot" style="background:var(--muted)"></span>Reading Resources</a>
-    <a class="sb-link" href="#papers"><span class="sb-dot" style="background:var(--muted)"></span>Must-Read Papers</a>
+    <a class="sb-link" href="#reading"><span class="sb-dot" style="background:var(--muted)"></span>Reading Books</a>
+    <a class="sb-link" href="#papers"><span class="sb-dot" style="background:var(--muted)"></span>Research Papers</a>
+    <a class="sb-link" href="https://monirules.github.io/LLM_Roadmap.github.io/phd_watchlist.pdf" target="_blank"><span class="sb-dot" style="background:var(--muted)"></span>YouTube Watch List</a>
     <a class="sb-link" href="#compute"><span class="sb-dot" style="background:var(--muted)"></span>Compute Resources</a>
-    <a class="sb-link" href="#schedule"><span class="sb-dot" style="background:var(--muted)"></span>Daily Schedule</a>
-    <a class="sb-link" href="#advice"><span class="sb-dot" style="background:var(--muted)"></span>Final Advice</a>
+    
+    
   </nav>
   <div class="sb-footer">
     <div>
@@ -964,22 +957,29 @@ a:hover{color:var(--teal);text-decoration:underline}
     <div class="reading-meta"><span class="task-tag tag-read">Textbook</span><span class="task-tag" style="background:var(--accent-soft);color:var(--accent)">W1–W7</span></div>
     <h4><a href="https://www.deeplearningbook.org/" target="_blank" class="res-link-title">Deep Learning — Goodfellow, Bengio & Courville (MIT Press)</a></h4>
     <p>The foundational DL textbook. Free HTML version. <strong>Read in order:</strong> Ch 6 (Feedforward Networks → W1), Ch 10 (Sequence Modeling → W2), Ch 9 (CNNs, skim → W6). Part I (Ch 2–5) for math refresher if needed. Don't read cover-to-cover — use as reference alongside lectures.</p>
-    <div class="reading-chapters">Key chapters: 6 · 9 · 10 · 11 · 12 · Part I for math review</div>
+    <div class="reading-chapters">Key chapters: 3 · 6 · 7 · 8 · 9 · 11 · 12 — also available as <a href="https://aikosh.indiaai.gov.in/static/Deep+Learning+Ian+Goodfellow.pdf" target="_blank" class="res-link">single PDF</a></div>
   </div>
 
   <div class="reading-card">
     <div class="reading-meta"><span class="task-tag tag-read">Textbook</span><span class="task-tag" style="background:var(--gold-soft);color:var(--gold)">W2–W7</span></div>
     <h4><a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank" class="res-link-title">Speech and Language Processing, 3rd Ed. Draft — Jurafsky & Martin (Stanford)</a></h4>
     <p>The NLP bible. Free PDF chapters updated Jan 2026. <strong>This is your primary NLP theory textbook.</strong> Read: Ch 3 (N-grams → W2), Ch 6 (Vector Semantics → W2), Ch 7 (Neural Nets & LMs → W1–W2), Ch 8 (Transformers → W3), Ch 9 (Pretraining: BERT, GPT → W3–W4), Ch 11 (Fine-Tuning → W4–W5), Ch 12 (LLMs → W5).</p>
-    <div class="reading-chapters">Key chapters: 3 · 6 · 7 · 8 · 9 · 11 · 12 — also available as <a href="https://github.com/yanshengjia/ml-road/blob/master/resources/Speech%20and%20Language%20Processing%20(3rd%20Edition).pdf" target="_blank" class="res-link">single PDF</a></div>
+    <div class="reading-chapters">Key chapters: 3 · 6 · 7 · 8 · 9 · 11 · 12 — also available as <a href="https://web.stanford.edu/~jurafsky/slp3/ed3book_jan26.pdf" target="_blank" class="res-link">single PDF</a></div>
   </div>
 
   <div class="reading-card">
-    <div class="reading-meta"><span class="task-tag tag-read">Textbook</span><span class="task-tag" style="background:var(--teal-soft);color:var(--teal)">W2–W3</span></div>
-    <h4><a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf" target="_blank" class="res-link-title">Natural Language Processing — Jacob Eisenstein (Georgia Tech / MIT Press)</a></h4>
-    <p>Free PDF on GitHub. More formal/mathematical than Jurafsky — excellent for understanding the ML foundations of NLP. Read Ch 1–4 (classification, word embeddings) and Ch 6–7 (sequences, neural models) alongside CS224N lectures in Weeks 2–3.</p>
-    <div class="reading-chapters">Key chapters: 1–4 (fundamentals) · 6–7 (sequences) · Free PDF under CC license</div>
-  </div>
+    <div class="reading-meta"><span class="task-tag tag-read">Textbook</span><span class="task-tag" style="background:var(--teal-soft);color:var(--teal)">W6–W7</span></div>
+    <h4><a href="https://ieeexplore.ieee.org/abstract/document/10745358" target="_blank" class="res-link-title">Build a Large Language Model (From Scratch) — Sebastian Raschka (Manning)</a></h4>
+    <p>A hands-on guide that takes you inside the AI black box to build, train, and tweak large language models from the ground up. It guides you step-by-step through initial design, preparing datasets, pretraining on a general corpus, fine-tuning for specific tasks, and incorporating human feedback—all codeable on an ordinary laptop.</p>
+    <div class="reading-chapters">Key topics: Coding LLMs from scratch · Pretraining · Fine-tuning · RLHF (Human Feedback)</div>
+</div>
+
+  <div class="reading-card">
+    <div class="reading-meta"><span class="task-tag tag-read">Textbook</span><span class="task-tag" style="background:var(--teal-soft);color:var(--teal)">W4–W5</span></div>
+    <h4><a href="https://promptcraze.com/wp-content/uploads/2025/02/LLM-Engineers-Handbook.pdf" target="_blank" class="res-link-title">LLM Engineer's Handbook — Paul Iusztin & Maxime Labonne (Packt Publishing)</a></h4>
+    <p>A comprehensive guide on engineering large language models from concept to production. Excellent for transitioning from theoretical concepts to practical, hands-on implementation. Covers the fundamentals of deploying open-source models, advanced fine-tuning techniques, and building scalable RAG (Retrieval-Augmented Generation) applications.</p>
+    <div class="reading-chapters">Key topics: Open-source LLMs · Fine-tuning · RAG pipelines · MLOps & Deployment — also available as <a href="https://promptcraze.com/wp-content/uploads/2025/02/LLM-Engineers-Handbook.pdf" target="_blank" class="res-link">single PDF</a></div>
+</div>
 
 
 
@@ -1043,23 +1043,7 @@ a:hover{color:var(--teal);text-decoration:underline}
   </div>
 </section>
 
-<!-- ═══════════ SCHEDULE ═══════════ -->
-<section class="section" id="schedule">
-  <h2 class="section-title"> Daily Schedule</h2>
-  <p class="section-desc">5–6 hours on weekdays, 6–8 on weekends. Consistency beats intensity — six focused hours every day beats twelve some days and zero others.</p>
-  <div class="schedule-grid">
-    <div class="schedule-time">Session 1</div><div class="schedule-activity"><strong>9:00–11:00 AM</strong> — Theory & Lectures (2 hrs). Watch lectures, read papers. Pen and paper. Pause and think.</div>
-    <div class="schedule-time">Break</div><div class="schedule-activity"><strong>11:00–11:30</strong> — Walk, rest. No screens.</div>
-    <div class="schedule-time">Session 2</div><div class="schedule-activity"><strong>11:30–1:30 PM</strong> — Coding Practice (2 hrs). Implement what you learned. Code from scratch first, then compare with references.</div>
-    <div class="schedule-time">Break</div><div class="schedule-activity"><strong>1:30–3:00</strong> — Lunch and full break.</div>
-    <div class="schedule-time">Session 3</div><div class="schedule-activity"><strong>3:00–5:00 PM</strong> — Paper Reading + Review (2 hrs). One paper/blog post. Consolidate notes. Skim HF Daily Papers.</div>
-    <div class="schedule-time">Evening</div><div class="schedule-activity"><strong>Optional</strong> — Light review. Skim code from the day. Write 3-sentence summary. No new topics at night.</div>
-  </div>
-  <div class="callout important">
-    <div class="callout-label">On Pace</div>
-    Don't try to understand everything perfectly before moving on. If stuck 3 days on one derivation, you're going too deep. Mark it, move on, revisit during Week 7.
-  </div>
-</section>
+
 
 <!-- ═══════════ POSTPONE ═══════════ -->
 <section class="section" id="postpone">
